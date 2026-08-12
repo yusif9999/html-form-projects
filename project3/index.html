@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Invoice and Payment Form</title>
+</head>
+<body>
+    <center><img src="img/filmaLogosu.png" alt="Company Logo" title="Logo" width="350" height="200"></center>
+    <h1><center>Order Invoice and Payment Screen</center></h1>
+    <hr>
+    <h2>1. Purchased Products (Invoice Summary)</h2>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Technical Specification</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>UR-101</code></td>
+                <td>Smart Filter</td>
+                <td>H<sub>2</sub>O Cleaning</td>
+                <td align="center">2</td>
+                <td><del>150 TL</del> <ins>120 TL</ins></td>
+                <td>240 TL</td>
+            </tr>
+            <tr>
+                <td><code>UR-205</code></td>
+                <td>Insulation Material</td>
+                <td>5m<sup>2</sup> Coating</td>
+                <td align="center">1</td>
+                <td>300 TL</td>
+                <td>300 TL</td>
+            </tr>
+            <tr>
+                <td><code>UR-308</code></td>
+                <td>Copper Cable</td>
+                <td>10m</td>
+                <td align="center">1</td>
+                <td><del>100 TL</del> 80 TL</td>
+                <td>80 TL</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>Subtotal: 620 TL</p>
+    <p>Discount Amount: -50 TL</p>
+    <p><big><strong>Net Amount to Pay: <mark>570 TL</mark></strong></big></p>
+    <hr>
+    <h2><center>2. Order Completion Form</center></h2>
+    <p><center>Please fill in the delivery address and payment information for the products.</center></p>
+    <p><span style="color: red;">System Warning Note:</span> Dear user, the places marked with (<var>x</var>) in the form represent mandatory fields. Please do not leave them blank.</p>
+    <form action="#" method="post">
+        <div>
+            <label for="nameSurname">Name and Surname (<var>x</var>):</label><br>
+            <input type="text" id="nameSurname" required>
+        </div>
+        <br>
+        <div>
+            <label for="teslimatAdresi">Delivery Address (<var>x</var>):</label>
+            <br>
+            <textarea name="teslimatAdresi" id="teslimatAdresi" cols="50" rows="4" required></textarea>
+        </div>
+        <br>
+        <div>
+            <p for="paymentMethod">Select Payment Method:</p>
+            <input type="radio" id="creditCard" name="payment" checked>
+            <label for="creditCard">Credit Card Payment</label>
+            <br>
+            <input type="radio" id="bank" name="payment">
+            <label for="bank">Bank Transfer / EFT</label>
+            <br>
+            <input type="radio" id="cash" name="payment">
+            <label for="cash">Cash on Delivery</label>
+        </div>
+        <br>
+        <div>
+            <label for="note">Order Note (Optional)</label><br>
+            <input type="text" size="50" placeholder="Is there a note you would like to be forwarded to the cargo?">
+        </div><br>
+        <button type="submit">Confirm Order and Purchase</button>
+    </form>
+    <br>
+    <hr>
+    <center>
+        <address>
+            <strong>Customer Service Contact:</strong><br>
+            Phone: 0850 123 45 67 <br>
+            E-mail: <a href="mailto:destek@teknoyapitest.com">support@teknoyapitest.com</a><br>
+            Address: Central Neighborhood, Trial Street, No: 2, Test City
+        </address>
+    </center>
+</body>
+</html>
